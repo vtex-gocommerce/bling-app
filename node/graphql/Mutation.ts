@@ -3,9 +3,11 @@ import { biuldGraphQlError } from '@gocommerce/utils'
 export const generate = async (param, makeApiCall, ctx) => {
   const errorList = []
 
+  var d = new Date()
+
   let { data: responseData, error: errorIam } = await makeApiCall('/iam/identity-providers/application-keys', 'post', {
     partner: 'bling',
-    name: 'defaultkey'
+    name: 'generated-on-' + d.getTime()
   })
 
   if (errorIam) {

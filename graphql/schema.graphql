@@ -14,6 +14,10 @@ type AppCredentials {
   secret: String
 }
 
+type Query {
+  appFakeCredentials: AppCredentials
+}
+
 type Mutation {
   generateCredentials(data: String): AppCredentials
 }

@@ -59,8 +59,8 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
       .generateAppCredentials({ variables: { data: JSON.stringify(values) } })
       .then(response => {
         if (
-          response.data.generateAppCredentials.status === 'success' &&
-          response.data.generateAppCredentials.userErrors.length === 0
+          response.data.generateCredentials.status === 'success' &&
+          response.data.generateCredentials.userErrors.length === 0
         ) {
           Notify.show(this.props.intl.formatMessage({ id: 'admin.appBling.textSugestion' }), {
             position: 'top-right',
@@ -69,8 +69,8 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
 
           this.setState({
             openModal: false,
-            appKey: response.data.generateAppCredentials.key,
-            appToken: response.data.generateAppCredentials.secret,
+            appKey: response.data.generateCredentials.key,
+            appToken: response.data.generateCredentials.secret,
             generated: true
           })
         }
