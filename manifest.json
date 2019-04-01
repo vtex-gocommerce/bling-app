@@ -1,0 +1,39 @@
+{
+  "name": "bling-app",
+  "vendor": "gocommerce",
+  "version": "1.0.0",
+  "title": "Bling app",
+  "description": "Bling app",
+  "mustUpdateAt": "2022-03-02",
+  "credentialType": "absolute",
+  "registries": ["smartcheckout", "gocommerce"],
+  "categories": ["gocommerce", "shipping"],
+  "dependencies": {
+    "gocommerce.admin": "1.x",
+    "gocommerce.styleguide": "2.x",
+    "gocommerce.gc-utils": "2.x",
+    "gocommerce.gc-context": "0.x"
+  },
+  "builders": {
+    "react": "3.x",
+    "pages": "1.x",
+    "messages": "1.x",
+    "node": "3.x",
+    "graphql": "1.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.gocommerce.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "splunk-heavyforwarder-public.vtex.com"
+      }
+    }
+  ]
+}

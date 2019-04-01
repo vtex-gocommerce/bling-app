@@ -1,0 +1,15 @@
+{
+  "admin.appBling.bling": "Bling",
+  "admin.appBling.appToken": "Secret",
+  "admin.appBling.appKey": "Key",
+  "admin.appBling.partner": "Bling",
+  "admin.appBling.formTitle": "Chaves de integração",
+  "admin.appBling.confirm": "Tem certeza que deseja gerar novas chaves?",
+  "admin.appBling.disclaimer": "Ao gerar novas chaves, as anteriores deixarão de funcionar e você deve informá-las na sua conta bling.",
+  "admin.appBling.textSugestion": "Copie as informações abaixo e envie para o bling.",
+  "admin.appBling.buttonGenerate": "Gerar",
+  "admin.appBling.buttonCancel": "Cancelar",
+  "admin.appBling.attentionTitle": "Atenção",
+  "admin.appBling.attentionInfo": "Esta informação não será visível. Você precisa salvá-la agora ou gerá-la novamente mais tarde",
+  "admin.appBling.account": "Código da conta (account)"
+}

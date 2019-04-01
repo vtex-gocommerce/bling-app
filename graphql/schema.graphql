@@ -1,0 +1,19 @@
+type UserError {
+  message: String!
+  # The i18n translation code
+  code: String!
+  # Path to input field (or other target) which caused the error.
+  # i.e.: ['accounts','0','name'] indicates an error at `accounts[0].name`
+  path: [String!]
+}
+
+type AppCredentials {
+  userErrors: [UserError]
+  status: String
+  key: String
+  secret: String
+}
+
+type Mutation {
+  generateCredentials(data: String): AppCredentials
+}

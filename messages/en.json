@@ -1,0 +1,15 @@
+{
+  "admin.appBling.bling": "Bling",
+  "admin.appBling.appToken": "APP Secret",
+  "admin.appBling.appKey": "APP Key",
+  "admin.appBling.partner": "Bling",
+  "admin.appBling.formTitle": "Integrations keys",
+  "admin.appBling.confirm": "Are you sure you want to generate new keys?",
+  "admin.appBling.disclaimer": "When generating new keys, the previous ones will no longer work and you should inform them in your bling account",
+  "admin.appBling.textSugestion": "Copy the appkey and apptoken end send for bling",
+  "admin.appBling.buttonGenerate": "Generate",
+  "admin.appBling.buttonCancel": "Cancel",
+  "admin.appBling.attentionTitle": "Attention",
+  "admin.appBling.attentionInfo": "This information will not be visible. You need to save it now or generate it again later",
+  "admin.appBling.account": "Account"
+}
