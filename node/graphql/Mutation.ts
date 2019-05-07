@@ -1,4 +1,4 @@
-import { biuldGraphQlError } from '@gocommerce/utils'
+import { buildGraphQLError } from '@gocommerce/utils'
 
 export const generate = async (param, makeApiCall, ctx) => {
   const errorList = []
@@ -12,7 +12,7 @@ export const generate = async (param, makeApiCall, ctx) => {
 
   if (errorIam) {
     errorList.push({ message: 'Fail generate app secret and app token', code: errorIam.status })
-    throw biuldGraphQlError('Fail generate app secret and app token', errorIam.response.status)
+    throw buildGraphQLError('Fail generate app secret and app token', errorIam.response.status)
   }
 
   console.log('POST MUTATION')
