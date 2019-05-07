@@ -23,7 +23,6 @@ interface BlingFormState {
   openModal: boolean
 }
 
-@WithNavigate.HOC()
 class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
   constructor(props) {
     super(props)
@@ -215,4 +214,4 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
   }
 }
 
-export default BlingForm
+export default WithNavigate.HOC()(BlingForm)
