@@ -61,7 +61,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
           response.data.generateCredentials.status === 'success' &&
           response.data.generateCredentials.userErrors.length === 0
         ) {
-          Notify.show(this.props.intl.formatMessage({ id: 'admin.appBling.textSugestion' }), {
+          Notify.show(this.props.intl.formatMessage({ id: 'admin/appBling.textSugestion' }), {
             position: 'top-right',
             type: 'success'
           })
@@ -85,7 +85,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
 
     const breadcrumbConfig = [
       { title: 'Apps', to: '/admin/apps' },
-      { title: <FormattedMessage id="admin.appBling.partner" /> }
+      { title: <FormattedMessage id="admin/appBling.partner" /> }
     ]
 
     return (
@@ -96,7 +96,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
             <div className="dn db-ns">
               <Link className="link" to="/admin/apps">
                 <Button style="secondary">
-                  <FormattedMessage id="admin.appBling.buttonCancel" />
+                  <FormattedMessage id="admin/appBling.buttonCancel" />
                 </Button>
               </Link>
             </div>
@@ -110,8 +110,8 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
             <div>
               {this.state.generated && (
                 <div className="g-mb2">
-                  <Alert title={this.formatMessage('admin.appBling.attentionTitle')} type="warning">
-                    <FormattedMessage id="admin.appBling.attentionInfo" />
+                  <Alert title={this.formatMessage('admin/appBling.attentionTitle')} type="warning">
+                    <FormattedMessage id="admin/appBling.attentionInfo" />
                   </Alert>
                 </div>
               )}
@@ -121,12 +121,12 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
                   <>
                     <Container isPlaceholderActive={this.props.isLoadingGenerateAppCredentials} id="default">
                       <h2 className="g-ma0 g-f4 fw6">
-                        <FormattedMessage id="admin.appBling.formTitle" />
+                        <FormattedMessage id="admin/appBling.formTitle" />
                       </h2>
 
                       <div className="g-mt6">
                         <Form.Input
-                          label={this.formatMessage('admin.appBling.account')}
+                          label={this.formatMessage('admin/appBling.account')}
                           className="w-100 tracked-mega g-f1"
                           name="account"
                           value={account.id}
@@ -136,7 +136,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
 
                       <div className="g-mt6">
                         <Form.Input
-                          label={this.formatMessage('admin.appBling.appKey')}
+                          label={this.formatMessage('admin/appBling.appKey')}
                           className="w-100 tracked-mega g-f1"
                           name="appKey"
                           value={this.state.appKey}
@@ -146,7 +146,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
 
                       <div className="g-mt6">
                         <Form.Input
-                          label={this.formatMessage('admin.appBling.appToken')}
+                          label={this.formatMessage('admin/appBling.appToken')}
                           className="w-100 tracked-mega g-f1"
                           name="appToken"
                           value={this.state.appToken}
@@ -161,7 +161,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
               <div className="flex justify-between">
                 <Link className="dn dib-ns link" to="/admin/apps">
                   <Button style="secondary">
-                    <FormattedMessage id="admin.appBling.buttonCancel" />
+                    <FormattedMessage id="admin/appBling.buttonCancel" />
                   </Button>
                 </Link>
 
@@ -170,7 +170,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
                   className="fixed static-ns w-100 w-auto-ns bottom-0 left-0 z-999"
                   onClick={() => this.handleClickButton()}
                 >
-                  <FormattedMessage id="admin.appBling.buttonGenerate" />
+                  <FormattedMessage id="admin/appBling.buttonGenerate" />
                   {this.props.isLoadingGenerateAppCredentials && <IconSpinner animate />}
                 </Button>
               </div>
@@ -183,16 +183,16 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
                 centered={true}
               >
                 <p className="ma0 g-f5 fw6 navy">
-                  <FormattedMessage id="admin.appBling.confirm" />
+                  <FormattedMessage id="admin/appBling.confirm" />
                 </p>
 
                 <p className="ma0 g-pv4 g-f3 c-on-base-2">
-                  <FormattedMessage id="admin.appBling.disclaimer" />
+                  <FormattedMessage id="admin/appBling.disclaimer" />
                 </p>
 
                 <div className="flex justify-between">
                   <Button onClick={this.modalOnClose} style="secondary" className="dn dib-ns link">
-                    <FormattedMessage id="admin.appBling.buttonCancel" />
+                    <FormattedMessage id="admin/appBling.buttonCancel" />
                   </Button>
 
                   <Form.SubmitButton
@@ -201,7 +201,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
                     disabled={this.props.isLoadingGenerateAppCredentials}
                     className="fixed static-ns w-100 w-auto-ns bottom-0 left-0 z-999"
                   >
-                    <FormattedMessage id="admin.appBling.buttonGenerate" />
+                    <FormattedMessage id="admin/appBling.buttonGenerate" />
                     {this.props.isLoadingGenerateAppCredentials && <IconSpinner animate />}
                   </Form.SubmitButton>
                 </div>
