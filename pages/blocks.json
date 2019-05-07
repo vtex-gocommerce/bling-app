@@ -1,8 +1,0 @@
-{
-  "inject#bling": {
-    "props": {
-      "page": "admin.bling-app",
-      "title": "admin.appBling.bling"
-    }
-  }
-}
