@@ -8,11 +8,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "10.12.1",
     "@gocommerce/utils": "^0.6.0",
+    "@types/node": "10.12.1",
     "axios": "^0.17.1"
   },
   "devDependencies": {
-    "@types/koa": "^2.0.39"
+    "@types/koa": "^2.0.39",
+    "@vtex/api": "^3.21.2"
   }
 }

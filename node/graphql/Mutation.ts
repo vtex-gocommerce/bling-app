@@ -1,7 +1,7 @@
 import { buildGraphQLError } from '@gocommerce/utils'
 
-export const generate = async (param, makeApiCall, ctx) => {
-  const errorList = []
+export const generate = async (makeApiCall: Function) => {
+  const errorList: Array<{ message: string, code: string }> = []
 
   var d = new Date()
 
