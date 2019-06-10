@@ -12,7 +12,8 @@ export const generate = async (makeApiCall: Function) => {
 
   if (errorIam) {
     errorList.push({ message: 'Fail generate app secret and app token', code: errorIam.status })
-    throw buildGraphQLError('Fail generate app secret and app token', errorIam.response.status)
+
+    throw buildGraphQLError('bling-app.generate-token', errorIam.status)
   }
 
   console.log('POST MUTATION')
