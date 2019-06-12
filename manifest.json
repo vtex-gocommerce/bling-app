@@ -3,7 +3,7 @@
   "vendor": "gocommerce",
   "version": "1.0.4",
   "title": "Bling app",
-  "description": "Bling app",
+  "description": "Bling ERP",
   "mustUpdateAt": "2022-03-02",
   "credentialType": "absolute",
   "registries": ["smartcheckout", "gocommerce"],
