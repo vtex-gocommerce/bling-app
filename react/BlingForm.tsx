@@ -84,7 +84,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
     const isLoadingData = isLoadingGenerateAppCredentials ? true : false
 
     const breadcrumbConfig = [
-      { title: 'Apps', to: '/admin/apps' },
+      { title: 'Apps', page: 'admin.apps.home' },
       { title: <FormattedMessage id="admin/appBling.partner" /> }
     ]
 
@@ -94,7 +94,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
           breadcrumbConfig={breadcrumbConfig}
           buttons={
             <div className="dn db-ns">
-              <Link className="link" to="/admin/apps">
+              <Link className="link" page="admin.apps.home">
                 <Button style="secondary">
                   <FormattedMessage id="admin/appBling.buttonCancel" />
                 </Button>
@@ -159,7 +159,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
               </Form>
 
               <div className="flex justify-between">
-                <Link className="dn dib-ns link" to="/admin/apps">
+                <Link className="dn dib-ns link" page="admin.apps.home">
                   <Button style="secondary">
                     <FormattedMessage id="admin/appBling.buttonCancel" />
                   </Button>
