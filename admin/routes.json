@@ -1,0 +1,7 @@
+{
+  "admin.bling-app": {
+    "around": ["GoCommerceContext"],
+    "component": "index",
+    "path": "/admin/app/integration/gocommerce.bling-app"
+  }
+}
