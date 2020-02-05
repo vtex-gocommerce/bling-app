@@ -7,9 +7,10 @@
   resolved "https://registry.yarnpkg.com/@gocommerce/types-render/-/types-render-1.0.0.tgz#7ec860561e66e2a0ad49f288f2514564e601ba2f"
   integrity sha512-yvhOwjVmtYCUSXTee/9iOcaW1vbAt2UnHltcy7JaJ/Mi2N2TC3EcaFZyPNaKJhNt3IswbTGAF4CsTRlRpraTiw==
 
-"@types/node@10.12.1":
-  version "10.12.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.1.tgz#da61b64a2930a80fa708e57c45cd5441eb379d5b"
+"@types/node@^13.7.0":
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
+  integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
 
 "@types/prop-types@*":
   version "15.5.6"
