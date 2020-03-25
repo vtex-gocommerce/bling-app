@@ -3,7 +3,8 @@ import { WithNavigate, Form } from 'gocommerce.gc-utils'
 import { FormattedMessage } from 'react-intl'
 import { Link } from 'vtex.render-runtime'
 import { TemplatePage } from 'gocommerce.gc-utils'
-import { Alert, Button, IconSpinner, Notify, Container, Modal } from 'gocommerce.styleguide'
+import { Alert, Notify, Container, Modal } from 'gocommerce.styleguide'
+import { Button } from 'vtex.styleguide'
 import PlaceHolderContainerCard from './components/placeHolderContainerCard'
 
 interface BlingFormProps {
@@ -95,7 +96,7 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
           buttons={
             <div className="dn db-ns">
               <Link className="link" page="admin.apps.home">
-                <Button style="secondary">
+                <Button size="large" variation="secondary">
                   <FormattedMessage id="admin/appBling.buttonCancel" />
                 </Button>
               </Link>
@@ -160,19 +161,21 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
 
               <div className="flex justify-between">
                 <Link className="dn dib-ns link" page="admin.apps.home">
-                  <Button style="secondary">
+                  <Button size="large" variation="secondary">
                     <FormattedMessage id="admin/appBling.buttonCancel" />
                   </Button>
                 </Link>
 
-                <Button
-                  id="openModalGenerate"
-                  className="fixed static-ns w-100 w-auto-ns bottom-0 left-0 z-999"
-                  onClick={() => this.handleClickButton()}
-                >
-                  <FormattedMessage id="admin/appBling.buttonGenerate" />
-                  {this.props.isLoadingGenerateAppCredentials && <IconSpinner animate />}
-                </Button>
+                <div className="fixed static-ns w-100 w-auto-ns bottom-0 left-0 z-999">
+                  <Button
+                    size="large"
+                    id="openModalGenerate"
+                    onClick={() => this.handleClickButton()}
+                    isLoading={this.props.isLoadingGenerateAppCredentials}
+                  >
+                    <FormattedMessage id="admin/appBling.buttonGenerate" />
+                  </Button>
+                </div>
               </div>
 
               <Modal
@@ -191,18 +194,20 @@ class BlingForm extends React.PureComponent<BlingFormProps, BlingFormState> {
                 </p>
 
                 <div className="flex justify-between">
-                  <Button onClick={this.modalOnClose} style="secondary" className="dn dib-ns link">
-                    <FormattedMessage id="admin/appBling.buttonCancel" />
-                  </Button>
+                  <div className="dn dib-ns link">
+                    <Button size="large" onClick={this.modalOnClose} variation="secondary">
+                      <FormattedMessage id="admin/appBling.buttonCancel" />
+                    </Button>
+                  </div>
 
                   <Form.SubmitButton
                     id="carrierSubmit"
                     formId="FormId"
                     disabled={this.props.isLoadingGenerateAppCredentials}
                     className="fixed static-ns w-100 w-auto-ns bottom-0 left-0 z-999"
+                    isLoading={this.props.isLoadingGenerateAppCredentials}
                   >
                     <FormattedMessage id="admin/appBling.buttonGenerate" />
-                    {this.props.isLoadingGenerateAppCredentials && <IconSpinner animate />}
                   </Form.SubmitButton>
                 </div>
               </Modal>
