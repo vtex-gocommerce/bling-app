@@ -10,7 +10,7 @@
   "admin/appBling.buttonGenerate": "Gerar",
   "admin/appBling.buttonCancel": "Cancelar",
   "admin/appBling.attentionTitle": "Atenção",
-  "admin/appBling.attentionInfo": "Esta informação não será visível. Você precisa salvá-la agora ou gerá-la novamente mais tarde",
+  "admin/appBling.attentionInfo": "Esta informação não ficará visível. Você precisa copiá-la agora ou gerar uma nova caso perca esta chave.",
   "admin/appBling.account": "Código da conta (account)",
   "admin/appBling.settings": "Configuração"
 }
