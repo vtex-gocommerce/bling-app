@@ -11,5 +11,6 @@
   "admin/appBling.buttonCancel": "Cancel",
   "admin/appBling.attentionTitle": "Attention",
   "admin/appBling.attentionInfo": "This information will not be visible. You need to save it now or generate it again later",
-  "admin/appBling.account": "Account"
+  "admin/appBling.account": "Account",
+  "admin/appBling.settings": "Configuracion"
 }

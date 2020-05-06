@@ -11,9 +11,10 @@
   "dependencies": {
     "@types/node": "^13.7.0",
     "@types/react": "^16.4.6",
-    "react-intl": "^2.4.0"
+    "react-intl": "^4.5.3"
   },
   "devDependencies": {
-    "@gocommerce/types-render": "^1.0.0"
+    "@gocommerce/types-render": "^1.0.0",
+    "@types/react-intl": "^3.0.0"
   }
 }
